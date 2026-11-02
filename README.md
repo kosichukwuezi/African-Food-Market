@@ -17,9 +17,15 @@ A website for African Food Market, my family's African grocery store on Hazeldea
 ## Built with
 
 HTML, CSS, and JavaScript, with no frameworks. Product and recipe data are stored in JavaScript arrays, so new items can be added without changing the page layout.
+## Notes
+
+I used AI tools to help draft and debug parts of this project. I designed the features, tested everything, and can walk through how the code works.
 
 ## Running it locally
 
 Clone the repo and open `index.html` in a browser.
 
-## What's
+## What's.next
+- Replace placeholder images with photos of the store's own products
+- Use a maps API for exact delivery distances instead of a neighbourhood lookup table
+- Connect the contact form so messages are actually sent
