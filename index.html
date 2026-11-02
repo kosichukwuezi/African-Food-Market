@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>African Food Market – Ottawa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="kente"></div>
+<div class="toast" id="toast">&#x2705; Added to cart!</div>
+
+<nav>
+  <div class="nlogo">
+    <div class="nicon">🌍</div>
+    <div class="ntxt">African Food Market<span class="nsub">Ottawa's Home of African Groceries</span></div>
+  </div>
+  <div class="nlinks">
+    <button class="act" onclick="go('home',this)">Home</button>
+    <button onclick="go('products',this)">Products</button>
+    <button onclick="go('delivery',this)">Delivery</button>
+    <button onclick="go('recipes',this)">Recipes</button>
+    <button onclick="go('about',this)">About</button>
+    <button onclick="go('contact',this)" class="cta">Contact</button>
+  </div>
+</nav>
+
+<!-- ===== HOME ===== -->
+<div class="page on" id="p-home">
+<div class="hero-wrap">
+  <div class="adinkra"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="100" cy="100" r="80" stroke="white" stroke-width="2.5"/><circle cx="100" cy="100" r="50" stroke="white" stroke-width="2.5"/><circle cx="100" cy="100" r="20" stroke="white" stroke-width="2.5"/><line x1="100" y1="20" x2="100" y2="180" stroke="white" stroke-width="2.5"/><line x1="20" y1="100" x2="180" y2="100" stroke="white" stroke-width="2.5"/><line x1="43" y1="43" x2="157" y2="157" stroke="white" stroke-width="2.5"/><line x1="157" y1="43" x2="43" y2="157" stroke="white" stroke-width="2.5"/></svg></div>
+  <div class="eyebrow"><span>🌍 Authentic African Groceries · Ottawa, ON</span></div>
+  <h1>The <em>Taste of Home,</em><br>Right Here in Ottawa</h1>
+  <p class="hdesc">From suya spice to palm oil, smoked catfish to egusi — everything your African kitchen needs, sourced with care and stocked with love. Family-owned, community-rooted.</p>
+  <div class="hbtns">
+    <button class="btn-g" onclick="go('products',null)">Shop Products</button>
+    <button class="btn-gh" onclick="go('delivery',null)">Order for Delivery</button>
+    <button class="btn-gh" onclick="go('recipes',null)">Recipe Finder</button>
+  </div>
+</div>
+<div class="hbar">
+  <div class="hitem"><i class="ti ti-map-pin"></i> 462 Hazeldean Road, Ottawa</div>
+  <div class="hitem"><i class="ti ti-truck-delivery"></i> Delivery within 20km</div>
+  <div class="hitem"><i class="ti ti-refresh"></i> Fresh stock every week</div>
+  <div class="hitem"><i class="ti ti-users"></i> Family-owned</div>
+  <div class="hitem"><i class="ti ti-certificate"></i> 200+ authentic products</div>
+</div>
+<div class="origins">
+  <div class="opill act">All Regions</div>
+  <div class="opill">West Africa 🇳🇬🇬🇭🇸🇳</div>
+  <div class="opill">Central Africa 🇨🇩🇨🇲</div>
+  <div class="opill">East Africa 🇪🇹🇰🇪</div>
+  <div class="opill">North Africa 🇲🇦🇪🇬</div>
+  <div class="opill">Southern Africa 🇿🇦🇿🇼</div>
+  <div class="opill">Caribbean Diaspora</div>
+</div>
+
+<div class="sec" style="background:#fff;">
+  <div class="sel">Browse by Category</div>
+  <div class="st">What Can We Find For You?</div>
+  <div class="cgrid">
+    <div class="cc" onclick="goCat('grains')"><span class="ci">🌾</span><span class="cn">Grains & Flour</span><span class="cct">11 items</span></div>
+    <div class="cc" onclick="goCat('spices')"><span class="ci">🌶️</span><span class="cn">Spices & Seasoning</span><span class="cct">26 items</span></div>
+    <div class="cc" onclick="goCat('meatfish')"><span class="ci">🍖</span><span class="cn">Meat & Fish</span><span class="cct">8 items</span></div>
+    <div class="cc" onclick="goCat('oils')"><span class="ci">🫙</span><span class="cn">Oils & Sauces</span><span class="cct">11 items</span></div>
+    <div class="cc" onclick="goCat('produce')"><span class="ci">🍌</span><span class="cn">Fresh Produce</span><span class="cct">2 items</span></div>
+    <div class="cc" onclick="goCat('dairy')"><span class="ci">🥣</span><span class="cn">Cereals & Dairy</span><span class="cct">11 items</span></div>
+    <div class="cc" onclick="goCat('beans')"><span class="ci">🫛</span><span class="cn">Beans & Legumes</span><span class="cct">6 items</span></div>
+    <div class="cc" onclick="goCat('drinks')"><span class="ci">🧃</span><span class="cn">Drinks</span><span class="cct">5 items</span></div>
+    <div class="cc" onclick="goCat('snacks')"><span class="ci">🍫</span><span class="cn">Snacks</span><span class="cct">8 items</span></div>
+    <div class="cc" onclick="goCat('beauty')"><span class="ci">🧴</span><span class="cn">Beauty</span><span class="cct">2 items</span></div>
+    <div class="cc" onclick="goCat('frozen')"><span class="ci">❄️</span><span class="cn">Frozen Foods</span><span class="cct">18 items</span></div>  </div>
+</div>
+
+<div class="sec">
+  <div class="sel">Staff Picks</div><div class="st">Customer Favourites</div>
+  <div class="ss">Our best-sellers — restocked weekly so they're always fresh.</div>
+  <div class="pgrid">
+    <!-- EXAMPLE A: real image from the internet (just paste an image URL into src) -->
+    <div class="pc"><span class="so-badge">Out of stock</span><div class="pi"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=400&h=400&fit=crop" alt="Suya Spice Mix"/></div><div class="pb"><span class="pt tpop">Popular</span><div class="pn">Suya Spice Mix</div><div class="po">Nigeria · 200g</div><div class="pf"><span class="pp">$5.99</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+    <!-- EXAMPLE B: your own store photo (put the file in an "images" folder next to this file) -->
+    <div class="pc"><span class="so-badge">Out of stock</span><div class="pi"><img src="images/smoked-catfish.jpg" alt="Smoked Catfish"/></div><div class="pb"><span class="pt thot">🔥 Hot</span><div class="pn">Smoked Catfish</div><div class="po">West Africa · 500g</div><div class="pf"><span class="pp">$12.49</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+    <!-- EXAMPLE C: emoji placeholder for products you haven't photographed yet -->
+    <div class="pc"><span class="so-badge">Out of stock</span><div class="pi" style="background:#E8F5EC">🌿</div><div class="pb"><span class="pt tnew">New</span><div class="pn">Locust Beans (Iru)</div><div class="po">Nigeria · 100g</div><div class="pf"><span class="pp">$3.49</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+    <div class="pc"><span class="so-badge">Out of stock</span><div class="pi" style="background:#FFF3CC">🫙</div><div class="pb"><span class="pt tpop">Popular</span><div class="pn">Red Palm Oil</div><div class="po">Ghana · 1 litre</div><div class="pf"><span class="pp">$8.99</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+    <div class="pc"><span class="so-badge">Out of stock</span><div class="pi" style="background:#E8F5EC">🌾</div><div class="pb"><span class="pt tpop">Staple</span><div class="pn">Semolina Flour</div><div class="po">Multi-origin · 2kg</div><div class="pf"><span class="pp">$6.79</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+    <!-- EXAMPLE D: a SOLD OUT card — just add class "sold-out" to the .pc div -->
+    <div class="pc sold-out"><span class="so-badge">Out of stock</span><div class="pi" style="background:#FFF0E0">🍌</div><div class="pb"><span class="pt thot">🔥 Hot</span><div class="pn">Ripe Plantain</div><div class="po">Fresh · per bunch</div><div class="pf"><span class="pp">$3.99</span><button class="ab" onclick="showToast()">+</button></div></div></div>
+  </div>
+</div>
+
+<div class="sec revsec">
+  <div class="sel">Community Love</div><div class="st">What People Say</div>
+  <div class="ss">Ottawa's African community trusts us for the real thing.</div>
+  <div class="rgrid">
+    <div class="rc"><div class="stars">★★★★★</div><div class="rt">"The gentleman who assisted me was very friendly and reminded me of my dear African uncles. I love the taste of home far from home."</div><div class="rn">Fit Gyal</div><div class="rl">Local Guide</div></div>
+    <div class="rc"><div class="stars">★★★★★</div><div class="rt">"The place is packed with many amazing items, very friendly staff. Happy to have found this store."</div><div class="rn">Uzoamaka Mbelu</div><div class="rl">Ottawa, ON</div></div>
+    <div class="rc"><div class="stars">★★★★★</div><div class="rt">"Amazing store and pleasant owner — has a variety of African goods from all over. She helped me source ingredients to make jollof rice for the first time!"</div><div class="rn">Kosi C.</div><div class="rl">Nepean, ON</div></div>
+  </div>
+</div>
+
+<div class="sec" style="background:#fff;">
+  <div class="igrid">
+    <div class="ic"><h3><i class="ti ti-clock"></i> Store Hours</h3>
+      <div class="hr"><span style="color:var(--muted)">Mon – Fri</span><span class="open">10:00 AM – 8:00 PM</span></div>
+      <div class="hr"><span style="color:var(--muted)">Saturday</span><span class="open">10:00 AM – 8:00 PM</span></div>
+      <div class="hr"><span style="color:var(--muted)">Sunday</span><span class="open">12:00 PM – 7:00 PM</span></div>
+      <div class="hr"><span style="color:var(--muted)">Holidays</span><span style="color:var(--gold);font-weight:600">Call Ahead</span></div>
+    </div>
+    <div class="ic"><h3><i class="ti ti-map-pin"></i> Find Us</h3>
+      <div class="lr"><i class="ti ti-map-pin"></i><span>462 Hazeldean Road, Ottawa ON K2V 0J4</span></div>
+      <div class="lr"><i class="ti ti-phone"></i><span>(343) 297-2051</span></div>
+      <div class="lr"><i class="ti ti-mail"></i><span>contact@africanfoodmarket.ca</span></div>
+      <div class="lr"><i class="ti ti-brand-instagram"></i><span>@AfricanFoodMarketOttawa</span></div>
+      <button class="btn-g" style="margin-top:10px;width:100%" onclick="go('delivery',null)">Order for Delivery</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== PRODUCTS ===== -->
+<div class="page" id="p-products">
+<div class="dhero"><h2>Our Products</h2><p>200+ authentic African groceries — from everyday staples to hard-to-find specialties</p></div>
+<div class="sec">
+  <div class="prod-search">
+    <i class="ti ti-search"></i>
+    <input type="text" id="prod-search-input" placeholder="Search products — e.g. egusi, palm oil, garri..." oninput="searchProducts()"/>
+    <span class="clear-search" id="clear-search" onclick="clearSearch()" style="display:none;">&#x2715;</span>
+  </div>
+  <div class="sel">Filter by Category</div>
+  <div class="cgrid" style="margin-bottom:2rem">
+    <div class="cc cat-filter active" data-filter="all" onclick="filterCat('all',this)"><span class="ci">🛒</span><span class="cn">All Products</span></div>
+    <div class="cc cat-filter" data-filter="grains" onclick="filterCat('grains',this)"><span class="ci">🌾</span><span class="cn">Grains & Flour</span></div>
+    <div class="cc cat-filter" data-filter="spices" onclick="filterCat('spices',this)"><span class="ci">🌶️</span><span class="cn">Spices & Seasoning</span></div>
+    <div class="cc cat-filter" data-filter="meatfish" onclick="filterCat('meatfish',this)"><span class="ci">🍖</span><span class="cn">Meat & Fish</span></div>
+    <div class="cc cat-filter" data-filter="oils" onclick="filterCat('oils',this)"><span class="ci">🫙</span><span class="cn">Oils & Sauces</span></div>
+    <div class="cc cat-filter" data-filter="produce" onclick="filterCat('produce',this)"><span class="ci">🍌</span><span class="cn">Fresh Produce</span></div>
+    <div class="cc cat-filter" data-filter="dairy" onclick="filterCat('dairy',this)"><span class="ci">🥣</span><span class="cn">Cereal & Dairy</span></div>
+    <div class="cc cat-filter" data-filter="beans" onclick="filterCat('beans',this)"><span class="ci">🫛</span><span class="cn">Beans & Legumes</span></div>
+    <div class="cc cat-filter" data-filter="drinks" onclick="filterCat('drinks',this)"><span class="ci">🧃</span><span class="cn">Drinks</span></div>
+    <div class="cc cat-filter" data-filter="snacks" onclick="filterCat('snacks',this)"><span class="ci">🍫</span><span class="cn">Snacks</span></div>
+    <div class="cc cat-filter" data-filter="beauty" onclick="filterCat('beauty',this)"><span class="ci">🧴</span><span class="cn">Beauty</span></div>
+    <div class="cc cat-filter" data-filter="frozen" onclick="filterCat('frozen',this)"><span class="ci">❄️</span><span class="cn">Frozen Foods</span></div>
+  </div>
+  <div class="sel">Full Inventory</div><div class="st" style="margin-bottom:1.25rem" id="prod-heading">All Products</div>
+  <div class="pgrid" id="prod-grid"></div>
+  <div id="prod-empty" style="display:none;text-align:center;padding:2rem;color:var(--muted);font-size:14px;">No products found — try another search, or <span style="color:var(--green);cursor:pointer;text-decoration:underline" onclick="go('contact',null)">contact us</span> to request one!</div>
+</div>
+</div>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="pmodal" id="pmodal" onclick="if(event.target===this)closeProduct()">
+  <div class="pmbox">
+    <div class="pm-img" id="pm-img">
+      <button class="pm-close" onclick="closeProduct()" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="pm-body">
+      <span class="pm-tag" id="pm-tag"></span>
+      <div class="pm-name" id="pm-name"></div>
+      <div class="pm-origin" id="pm-origin"></div>
+      <div class="pm-desc" id="pm-desc"></div>
+      <div id="pm-sizes-wrap">
+        <div class="pm-sizes-label">Choose a size</div>
+        <div class="pm-sizes" id="pm-sizes"></div>
+      </div>
+      <div class="pm-footer">
+        <div class="pm-price" id="pm-price"></div>
+        <button class="pm-add" onclick="showToast()">Add to Order</button>
+      </div>
+      <div class="pm-stock" id="pm-stock"><i class="ti ti-check"></i> In stock at our store</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DELIVERY ===== -->
+<div class="page" id="p-delivery">
+<div class="dhero"><h2>Delivery & Pickup</h2><p>We deliver within 20km of our Hazeldean Road store — or pick up for free anytime.</p></div>
+<div class="sec">
+  <div class="sel" style="margin-bottom:8px">Choose Your Option</div>
+  <div class="dopts">
+    <div class="dopt sel" id="od" onclick="selOpt('d')"><div class="di">🚗</div><h3>Home Delivery</h3><p>We bring it to your door — available within 20km of our store</p><span class="db gbadge">Fee based on distance · Free over $150</span></div>
+    <div class="dopt" id="op" onclick="selOpt('p')"><div class="di">🏪</div><h3>In-Store Pickup</h3><p>Order ahead, ready within 2 hours — zero fees, always</p><span class="db fbadge">Always Free</span></div>
+  </div>
+
+  <div class="ic" style="margin-bottom:1.5rem">
+    <h3 style="font-size:16px;margin-bottom:1rem"><i class="ti ti-map-2"></i> Delivery Zones & Fees</h3>
+    <table class="ztbl">
+      <thead><tr><th>Zone</th><th>Distance from Store</th><th>Min. Order</th><th>Delivery Fee</th><th>Est. Time</th></tr></thead>
+      <tbody>
+        <tr><td><span class="zb z1">Zone 1</span></td><td>0 – 5 km</td><td>$25</td><td style="font-weight:700;color:var(--green)">$3.99</td><td>30–45 min</td></tr>
+        <tr><td><span class="zb z2">Zone 2</span></td><td>5 – 10 km</td><td>$35</td><td style="font-weight:700;color:#854F0B">$7.99</td><td>45–60 min</td></tr>
+        <tr><td><span class="zb z3">Zone 3</span></td><td>10 – 15 km</td><td>$50</td><td style="font-weight:700;color:#854F0B">$11.99</td><td>60–75 min</td></tr>
+        <tr><td><span class="zb z4">Zone 4</span></td><td>15 – 20 km</td><td>$65</td><td style="font-weight:700;color:#8B2020">$15.00</td><td>75–90 min</td></tr>
+        <tr><td><span class="zb z5">Outside</span></td><td>20+ km</td><td colspan="3" style="color:var(--muted)">Not available — please use in-store pickup</td></tr>
+        <tr><td colspan="5" style="background:var(--gl);color:#1A5C2A;font-weight:600;text-align:center;padding:10px 12px;">🎉 Orders over $150 always get FREE delivery, any zone!</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ADDRESS-BASED DELIVERY CALCULATOR -->
+  <div class="ccard">
+    <h3>Check Your Delivery Fee</h3>
+    <p class="csub">Enter your Ottawa address and your estimated order total — we'll calculate your exact delivery fee.</p>
+    <div class="calc-hint">📍 Our store is at <strong>462 Hazeldean Road, Kanata, Ottawa</strong>. Delivery available within 20km.</div>
+    <div class="order-row">
+      <label>Estimated order total: $</label>
+      <input type="number" id="order-total" placeholder="e.g. 60" min="0" step="1"/>
+    </div>
+    <div class="addr-row">
+      <input type="text" id="addr-input" placeholder="Enter your street address, Ottawa (e.g. 100 Carling Ave)" />
+      <button onclick="calcDelivery()">Calculate Fee</button>
+    </div>
+    <div id="addr-error" style="display:none;font-size:12px;color:#8B2020;margin-top:4px;padding:6px 10px;background:#FDEAEA;border-radius:6px;">Please enter a street address and an order total to continue.</div>
+    <div class="cres" id="cres">
+      <div class="crl" id="czl">Delivery estimate</div>
+      <div class="crv" id="czv">–</div>
+      <div class="crn" id="czn"></div>
+      <div class="cr-chips" id="cr-chips"></div>
+    </div>
+  </div>
+
+  <div class="ibox" style="margin-top:1rem">
+    <p><strong style="color:var(--green)">How to Order:</strong> Call or WhatsApp us at <strong>(343) 297-2051</strong>. We'll confirm your order, zone, and estimated arrival time. Payment accepted by cash on delivery or Interac e-transfer. Online ordering coming soon!</p>
+  </div>
+</div>
+</div>
+
+<!-- ===== RECIPES ===== -->
+<div class="page" id="p-recipes">
+<div class="dhero" style="background:var(--earth2)"><h2>Recipe Ingredient Finder</h2><p>Search any African dish — we'll show you every ingredient you need and which ones we carry</p></div>
+<div class="sec">
+  <div class="rfcard">
+    <h3>Find Ingredients for Your Dish</h3>
+    <p>Type a recipe name or ingredient (e.g. "Jollof rice", "Egusi soup", "Suya", "palm oil") to see what you need and what we stock.</p>
+    <div class="fsrch">
+      <input type="text" id="dsrch" placeholder="e.g. Jollof rice, Egusi soup, Pounded yam..." onkeydown="if(event.key==='Enter')srch()"/>
+      <button onclick="srch()">Find Ingredients</button>
+    </div>
+    <div id="nores" style="display:none;font-size:13px;color:var(--muted);padding:8px 0;margin-top:4px">No match found. Try one of the featured dishes below, or <a onclick="go('contact',null)" style="color:var(--green);cursor:pointer;text-decoration:underline">contact us</a> and we'll help track it down.</div>
+  </div>
+
+  <div id="ipanel" class="ipanel">
+    <div class="iph">
+      <div><div class="ipt" id="idn">–</div><div class="ips" id="ios">–</div></div>
+      <button class="cbtn" onclick="closeIng()" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="ilist" id="ilist"></div>
+    <button class="askbtn" onclick="alert('Coming soon: full AI-powered recipe guide!')">Get the Full Step-by-Step Recipe &#8599;</button>
+  </div>
+
+  <div style="margin-top:1.75rem">
+    <div class="sel">Browse by Dish</div><div class="st" style="margin-bottom:1.25rem">Popular Recipes</div>
+    <div class="dgrid" id="dgrid"></div>
+  </div>
+</div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div class="page" id="p-about">
+<div class="dhero"><h2>Our Story</h2><p>A family business rooted in community, culture, and the love of African food</p></div>
+<div class="sec">
+  <div class="sgrid">
+    <div class="stxt">
+      <p>"We opened African Food Market because we knew how hard it was to find the ingredients that make a house feel like home."</p>
+      <p style="margin-top:.5rem">What started as a passion project has grown into one of Ottawa's most trusted African grocery stores, serving families from Nigeria, Ghana, Cameroon, the Congo, Senegal, and across the continent and diaspora.</p>
+      <p>We stock the real thing — authentic brands, real ingredients, no substitutes. Our shelves are restocked every week so what you find is always fresh. When a customer walks in looking for something specific, we do our best to source it.</p>
+      <div class="vals">
+        <div class="vi"><div class="vd"></div><div><strong>Authenticity First</strong><p>Every product is carefully sourced to match what you'd find back home — no imitations, no shortcuts.</p></div></div>
+        <div class="vi"><div class="vd"></div><div><strong>Community Rooted</strong><p>We're not just a store. We're a gathering point for Ottawa's African diaspora community.</p></div></div>
+        <div class="vi"><div class="vd"></div><div><strong>Family Values</strong><p>Run by family, for families. We treat every customer like a neighbour.</p></div></div>
+      </div>
+    </div>
+    <div class="spat">
+      <div class="srow"><div><div class="sl">Authentic products in stock</div><div class="sv">200+</div></div></div>
+      <div class="srow"><div><div class="sl">African countries represented</div><div class="sv">15+</div></div></div>
+      <div class="srow"><div><div class="sl">Families served each week</div><div class="sv">300+</div></div></div>
+      <div class="srow"><div><div class="sl">Km delivery radius</div><div class="sv">20</div></div></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div class="page" id="p-contact">
+<div class="dhero"><h2>Contact Us</h2><p>Questions about products, delivery, or a special order? We'd love to hear from you.</p></div>
+<div class="sec">
+  <div class="cgrid2">
+    <div class="cfcard">
+      <h3>Send Us a Message</h3>
+      <div class="fg"><label>Your Name</label><input type="text" placeholder="Your full name"/></div>
+      <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="fg"><label>Subject</label>
+        <select>
+          <option>Product enquiry</option>
+          <option>Delivery question</option>
+          <option>Special order request</option>
+          <option>Wholesale</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg"><label>Message</label><textarea placeholder="Tell us what you need — we read every message!"></textarea></div>
+      <button class="sbtn" onclick="subForm()">Send Message</button>
+      <div class="fsuccess" id="fsuc">&#x2705; Message sent! We'll get back to you within 24 hours.</div>
+    </div>
+    <div class="cistack">
+      <div class="cicard">
+        <h4><i class="ti ti-map-pin"></i> Visit the Store</h4>
+        <div class="crow2"><i class="ti ti-map-pin"></i><span>462 Hazeldean Road, Ottawa ON K2V 0J4</span></div>
+        <div class="crow2"><i class="ti ti-clock"></i><span>Mon–Fri: 10am–8pm · Sat: 10am–8pm · Sun: 12pm–7pm</span></div>
+      </div>
+      <div class="cicard">
+        <h4><i class="ti ti-phone"></i> Call or WhatsApp</h4>
+        <div class="crow2"><i class="ti ti-phone"></i><span>(343) 297-2051</span></div>
+        <div class="crow2"><i class="ti ti-brand-whatsapp"></i><span>WhatsApp orders always welcome!</span></div>
+        <div class="crow2"><i class="ti ti-mail"></i><span>contact@africanfoodmarket.ca</span></div>
+      </div>
+      <div class="cicard">
+        <h4><i class="ti ti-brand-instagram"></i> Follow Us</h4>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:10px">New arrivals, weekly specials, and community events — follow us for updates!</p>
+        <div class="socrow">
+          <button class="sb2"><i class="ti ti-brand-instagram" style="font-size:14px"></i> Instagram</button>
+          <button class="sb2"><i class="ti ti-brand-facebook" style="font-size:14px"></i> Facebook</button>
+          <button class="sb2"><i class="ti ti-brand-tiktok" style="font-size:14px"></i> TikTok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="flogo">African Food Market <span>Ottawa</span></div>
+  <p>Authentic African groceries · 462 Hazeldean Road, Ottawa · Family-owned with love</p>
+  <p style="margin-top:8px;font-size:11px;opacity:.4">&copy; 2026 African Food Market Ottawa. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
